@@ -235,11 +235,11 @@ class Step
         $real_content = Arr::get($flow->request, 'real_content');
         // 更新流程主表
         $flow_mod->update(array(
-//            'current_step' => $to,
-//            'current_status' => $to_status,
-//            'accepted_users' => $to_accepted_users,
-//            'accepted_uids' => $to_accepted_uids,
-//            'accepted_roles' => $to_accepted_roles
+            'current_step' => $to,
+            'current_status' => $to_status,
+            'accepted_users' => $to_accepted_users,
+            'accepted_uids' => $to_accepted_uids,
+            'accepted_roles' => $to_accepted_roles
         ));
 
         $data = Arr::get($flow->request, 'data');
